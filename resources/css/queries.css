@@ -1,0 +1,916 @@
+
+/*  Big tablets to 1200px (width smaller than the 1140px row   */
+@media only screen and (max-width: 1200px) {
+    
+
+    .container-ratio, .row {max-width: 1070px;}
+    
+    .container-data {
+        max-width: 1200px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+
+    
+    .data,
+    .data-fill {
+        font-size: 80%;
+    }
+
+    .year-result,
+    .proyeksi {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        -webkit-box-flex: 0;
+                flex: 0 0 135px;
+    }
+
+    .summary-right h1 {
+        font-size: 350%;
+    }
+
+    .close {
+        display: none !important;
+    }
+
+}
+
+/*  Small tablet to big tablets: from 768px to 1023px   */
+@media only screen and (max-width: 1023px) {
+    
+    .row {max-width: 1020px;}
+
+    .container-ratio {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+                justify-content: space-evenly;
+    }
+
+
+    .container-data {
+        max-width: 1020px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+
+    .ratio-year-1,
+    .ratio-year-2,
+    .ratio-year-3,
+    .ratio-year-4,
+    .ratio-year-5,
+    .ratio-year-6 {
+        
+        width: 100px;
+    }
+
+    .form {
+        font-size: 70%;
+        height: 20px;
+    }
+
+    .data,
+    .data-fill {
+        font-size: 80%;
+    }
+
+    .head-column {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 150px;
+    }
+
+    .year-result,
+    .proyeksi {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        -webkit-box-flex: 0;
+                flex: 0 0 115px;
+    }
+
+    .summary-right h1 {
+        font-size: 290%;
+    }
+
+    .close {
+        display: none !important;
+    }
+
+}
+
+/*  Small phones to small tablets: from 481px to 767px   */
+@media only screen and (max-width: 907px) {
+    .row {max-width: 906px;}
+    .container-headline h1 {
+        font-size: 240%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+
+    .container-ratio {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
+    }
+
+
+    .container-data {
+        max-width: 906px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+
+    
+
+    .ratio-year-1,
+    .ratio-year-2,
+    .ratio-year-3,
+    .ratio-year-4,
+    .ratio-year-5,
+    .ratio-year-6 {
+        margin-top: 30px;
+        width: 400px;
+    }
+
+    .form {
+        font-size: 97%;
+        height: 40px;
+    } 
+
+    .form h5 {
+        font-size: 80%;
+    }
+
+    .data,
+    .data-fill {
+        font-size: 80%;
+    }
+
+    .head-column {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 120px;
+        margin: 0 10px;
+    }
+
+    #more-year-6 {
+        margin-top: 30px;
+    }
+
+    .year-result,
+    .proyeksi {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        -webkit-box-flex: 0;
+                flex: 0 0 105px;
+    }
+
+    .summary-right h1 {
+        font-size: 240%;
+    }
+
+    blockquote {
+        font-size: 140%;
+    }
+
+    .close {
+        display: none !important;
+    }
+  
+}
+
+@media only screen and (max-width: 807px) {
+    .data,
+    .data-fill {
+        font-size: 80%;
+    }
+
+    .data-fill h4 {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 97px;
+    }
+
+    .data-fill span {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0;
+    }
+
+    .year-result,
+    .proyeksi {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        -webkit-box-flex: 0;
+                flex: 0 0 98px;
+    }
+
+    .head-column {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 98px;
+        margin: 0 10px;
+    }
+
+    .summary-right h1 {
+        font-size: 230%;
+    }
+
+    .summary-right h2 {
+        font-size: 110%;
+    }
+
+    .summary-right h2:after {
+       width: 200px;
+    }
+
+    .close {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .row {max-width: 766px;}
+
+    .container-headline h1 {
+        font-size: 240%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+
+    .container-ratio {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
+    }
+
+
+    .container-data {
+        max-width: 766px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+
+    
+
+    .ratio-year-1,
+    .ratio-year-2,
+    .ratio-year-3,
+    .ratio-year-4,
+    .ratio-year-5,
+    .ratio-year-6 {
+        margin-top: 30px;
+        width: 400px;
+    }
+
+    .form {
+        font-size: 97%;
+        height: 40px;
+    } 
+
+    .form h5 {
+        font-size: 80%;
+    }
+
+    #more-year-6 {
+        margin-top: 30px;
+    }
+
+    .data,
+    .data-fill {
+        font-size: 80%;
+    }
+
+    .data-fill h4 {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 94px;
+    }
+
+    .data-fill span {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0;
+    }
+
+    .year-result,
+    .proyeksi {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        -webkit-box-flex: 0;
+                flex: 0 0 95px;
+    }
+
+    .head-column {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 95px;
+        margin: 0 10px;
+    }
+
+   
+    blockquote {
+        font-size: 120%;
+    }
+
+
+    cite {
+        margin: 0;
+        margin-top: 10px;
+        font-size: 110%;
+    }
+
+    .close {
+        display: none !important;
+    }
+  
+}
+
+@media only screen and (max-width: 720px) {
+    .data,
+    .data-fill {
+        font-size: 75%;
+    }
+
+    .data-fill h4 {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 85px;
+    }
+
+    .data-fill span {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0;
+    }
+
+    .year-result,
+    .proyeksi {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        -webkit-box-flex: 0;
+                flex: 0 0 86px;
+    }
+
+    .head-column {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 86px;
+        margin: 0 10px;
+    }
+
+    .summary-right h1 {
+        font-size: 220%;
+    }
+
+    .summary-right h2 {
+        font-size: 110%;
+    }
+
+    .summary-right h2:after {
+       width: 120px;
+    }
+
+    .summary-right {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 280px;
+    }
+    .summary-left {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 280px;
+    }
+
+    .summary-left h3 {
+        font-size: 120%;
+    }
+
+    .summary-left h4 {
+        font-size: 90%;
+    }
+
+    .summary {
+        max-width: 260px;
+    }
+
+    .close {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 647px) {
+    .row {max-width: 647px;}
+    
+    .container-headline h1 {
+        font-size: 180%;
+    }
+
+    h2 {
+        font-size: 120%;
+    }
+
+    .container-ratio {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
+    }
+
+
+    .container-data {
+        max-width: 647px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+
+    
+
+    .ratio-year-1,
+    .ratio-year-2,
+    .ratio-year-3,
+    .ratio-year-4,
+    .ratio-year-5,
+    .ratio-year-6 {
+        margin-top: 30px;
+        width: 400px;
+    }
+
+    .form {
+        font-size: 97%;
+        height: 40px;
+    } 
+
+    .form h5 {
+        font-size: 80%;
+    }
+
+    #more-year-6 {
+        margin-top: 30px;
+    }
+
+    .data,
+    .data-fill {
+        font-size: 62%;
+    }
+
+
+    .data-fill h4 {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 74px;
+    }
+
+    .data-fill span {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0;
+    }
+
+    .year-result,
+    .proyeksi {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        -webkit-box-flex: 0;
+                flex: 0 0 75px;
+    }
+
+    .head-column {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 75px;
+        margin: 0 10px;
+    }
+
+    .summary-right h1 {
+        font-size: 170%;
+    }
+
+    .summary-right h2 {
+        font-size: 90%;
+    }
+
+    .summary-right h2:after {
+       width: 100px;
+    }
+
+    .summary-right {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 180px;
+    }
+    .summary-left {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 250px;
+    }
+
+    .summary-left h3 {
+        font-size: 120%;
+    }
+
+    .summary-left h4 {
+        font-size: 80%;
+    }
+
+    .summary {
+        max-width: 240px;
+    }
+
+
+    .container-break {
+        width: 350px;
+    }
+
+    blockquote:before {display: none;}
+    
+    blockquote {
+        font-size: 120%;
+    
+        display: -webkit-box;
+    
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: start;
+                justify-content: flex-start;
+    }
+
+    blockquote span {
+        width: 350px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: end;
+                justify-content: flex-end;
+    }
+
+    cite {
+        margin-top: 10px;
+        font-size: 105%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: end;
+                justify-content: flex-end;
+    }
+
+    .close {
+        display: none !important;
+    }
+  
+}
+
+@media only screen and (max-width: 582px) {
+  
+    .data,
+    .data-fill {
+        font-size: 60%;
+    }
+
+
+    .data-fill h4 {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 69px;
+    }
+
+    .data-fill span {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0;
+    }
+
+    .year-result,
+    .proyeksi {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        -webkit-box-flex: 0;
+                flex: 0 0 70px;
+    }
+
+    .head-column {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 70px;
+        margin: 0 10px;
+    }
+    .close {
+        display: none !important;
+    }
+  
+}
+
+@media only screen and (max-width: 540px) {
+    .data,
+    .data-fill {
+        font-size: 54%;
+    }
+
+
+    .data-fill h4 {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 62px;
+    }
+
+    .data-fill span {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0;
+    }
+
+    .year-result,
+    .proyeksi {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        -webkit-box-flex: 0;
+                flex: 0 0 63px;
+    }
+
+    .head-column {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 63px;
+        margin: 0 6px;
+    }
+
+    .summary-right h1 {
+        font-size: 170%;
+    }
+
+    .summary-right h2 {
+        font-size: 90%;
+    }
+
+    .summary-right h2:after {
+       width: 100px;
+    }
+
+    .summary-right {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 180px;
+    }
+    .summary-left {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 250px;
+    }
+
+    .summary-left h3 {
+        font-size: 120%;
+    }
+
+    .summary-left h4 {
+        font-size: 80%;
+    }
+
+    .summary {
+        max-width: 240px;
+    }
+
+    .close {
+        display: none !important;
+    }
+}
+
+/*  Small phones: 0 to 480px   */
+@media only screen and (max-width: 488px) {
+    .row {max-width: 480px;}
+    .container-headline h1 {
+        font-size: 140%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+
+    .container-ratio {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
+    }
+
+
+    .container-data {
+        max-width: 480px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+
+    .container-result,
+    .container-proyeksi {
+        max-width: 480px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+
+    
+
+    .ratio-year-1,
+    .ratio-year-2,
+    .ratio-year-3,
+    .ratio-year-4,
+    .ratio-year-5,
+    .ratio-year-6 {
+        margin-top: 30px;
+        width: 360px;
+    }
+
+    .form {
+        font-size: 97%;
+        height: 40px;
+    } 
+
+    .form h5 {
+        font-size: 74%;
+    }
+
+    .data,
+    .data-fill {
+        font-size: 50%;
+    }
+
+    .data-fill h4 {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 58px;
+    }
+
+    .data-fill span {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0;
+    }
+
+    #more-year-6 {
+        margin-top: 30px;
+    }
+
+    .year-result,
+    .proyeksi {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: end;
+                align-items: flex-end;
+        -webkit-box-flex: 0;
+                flex: 0 0 58px;
+    }
+
+    .head-column {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 55px;
+        margin: 0 5px;
+    }
+
+    .summary-right h1 {
+        font-size: 160%;
+    }
+
+    .summary-right h2 {
+        font-size: 85%;
+    }
+
+    .summary-right h2:after {
+       width: 100px;
+    }
+
+    .summary-right {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 160px;
+    }
+    .summary-left {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-flex: 0;
+                flex: 0 0 230px;
+    }
+
+    .summary-left h3 {
+        font-size: 100%;
+    }
+
+    .summary-left h4 {
+        font-size: 70%;
+    }
+
+    .summary {
+        max-width: 170px;
+    }
+
+    
+
+    blockquote:before {
+        display: none;
+    }
+
+    blockquote {
+        font-size: 100%;
+    
+        display: -webkit-box;
+    
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+
+    cite {
+        margin-top: 20px;
+        font-size: 80%;
+    }
+
+    .close {
+        display: none !important;
+    }
+   
+}

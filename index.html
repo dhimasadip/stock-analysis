@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/queries.css">
+    <title>Stock Analysis</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/icons/favicon-16x16.png">
+    <link rel="manifest" href="./resources/icons/site.webmanifest">
+    <link rel="mask-icon" href="./resources/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./resources/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="./resources/icons/browserconfig.xml">
+    <meta name="theme-color" content="#3498db">
+
+</head>
+
+<body>
+    
+    <header class="heading">
+        <nav class="row close">
+            <ul class="main-nav">
+                <li class="ratio"><a href="#section-ratio">Ratio</a></li>
+                <li class="cash-flow"><a href="#section-cash-flow">Cash Flow</a></li>
+                <li class="margin"><a href="#section-profit-margin">Profit Margin</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-headline">
+            <div>
+                <h1>We Analize, You Decide</h1>
+            </div>
+            <div>
+                <a href="#section-ratio" class="btn-get-started" onclick="getStarted()">Get Started</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <section class="section-ratio close" id="section-ratio">
+        <div class="row">
+            <h2>Annual Financial Statement Ratio</h2>
+        </div>
+
+        <div class="row container-ratio">
+            <div class="ratio-year-1">
+                <div class="year-1">
+                    <h3>2019</h3>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Laba Bersih</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-bersih" id="laba-bersih-1" placeholder="laba bersih" required>
+                    </div>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Nominal Dividen</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="nominal-dividen" id="nominal-dividen-1" placeholder="nominal dividen" required>
+                    </div>
+                </div>
+                    
+                <div class="form">
+                    <div>
+                        <h5>Lembar Saham</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lembar-saham" id="lembar-saham-1" placeholder="lembar saham" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Kotor</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-kotor" id="laba-kotor-1" placeholder="Laba Kotor" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Operasi</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-operasi" id="laba-operasi-1" placeholder="Laba Operasi" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Pendapatan (Penjualan)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="pendapatan" id="pendapatan-1" placeholder="Pendapatan (Penjualan)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Ekuitas Entitas Induk</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="ekuitas" id="ekuitas-1" placeholder="ekuitas entitas induk" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Lialibilitas (Utang)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lialibilitas" id="lialibilitas-1" placeholder="Lialibilitas (Utang)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Operating Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="operating-cash-flow" id="operating-cash-flow-1" placeholder="Operating Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Investment Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="investment-cash-flow" id="investment-cash-flow-1" placeholder="Investment Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Financial Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="financial-cash-flow" id="financial-cash-flow-1" placeholder="Financial Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="btn-submit">
+                    <button class="" id="submit-1" onclick="submit1()">Submit</button>
+                </div>
+                
+            </div>
+
+            <div class="ratio-year-2">
+                <div class="year-2">
+                    <h3>2018</h3>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Laba Bersih</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-bersih" id="laba-bersih-2" placeholder="laba bersih" required>
+                    </div>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Nominal Dividen</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="nominal-dividen" id="nominal-dividen-2" placeholder="nominal dividen" required>
+                    </div>
+                </div>
+                    
+                <div class="form">
+                    <div>
+                        <h5>Lembar Saham</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lembar-saham" id="lembar-saham-2" placeholder="lembar saham" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Kotor</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-kotor" id="laba-kotor-2" placeholder="Laba Kotor" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Operasi</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-operasi" id="laba-operasi-2" placeholder="Laba Operasi" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Pendapatan (Penjualan)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="pendapatan" id="pendapatan-2" placeholder="Pendapatan (Penjualan)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Ekuitas Entitas Induk</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="ekuitas" id="ekuitas-2" placeholder="ekuitas entitas induk" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Lialibilitas (Utang)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lialibilitas" id="lialibilitas-2" placeholder="Lialibilitas (Utang)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Operating Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="operating-cash-flow" id="operating-cash-flow-2" placeholder="Operating Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Investment Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="investment-cash-flow" id="investment-cash-flow-2" placeholder="Investment Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Financial Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="financial-cash-flow" id="financial-cash-flow-2" placeholder="Financial Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="btn-submit">
+                    <button class="" id="submit-2" onclick="submit2()">Submit</button>
+                </div>
+                
+            </div>
+
+            <div class="ratio-year-3">
+                <div class="year-3">
+                    <h3>2017</h3>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Laba Bersih</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-bersih" id="laba-bersih-3" placeholder="laba bersih" required>
+                    </div>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Nominal Dividen</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="nominal-dividen" id="nominal-dividen-3" placeholder="nominal dividen" required>
+                    </div>
+                </div>
+                    
+                <div class="form">
+                    <div>
+                        <h5>Lembar Saham</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lembar-saham" id="lembar-saham-3" placeholder="lembar saham" required>
+                    </div>
+                </div>
+                
+                <div class="form">
+                    <div>
+                        <h5>Laba Kotor</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-kotor" id="laba-kotor-3" placeholder="Laba Kotor" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Operasi</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-operasi" id="laba-operasi-3" placeholder="Laba Operasi" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Pendapatan (Penjualan)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="pendapatan" id="pendapatan-3" placeholder="Pendapatan (Penjualan)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Ekuitas Entitas Induk</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="ekuitas" id="ekuitas-3" placeholder="ekuitas entitas induk" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Lialibilitas (Utang)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lialibilitas" id="lialibilitas-3" placeholder="Lialibilitas (Utang)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Operating Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="operating-cash-flow" id="operating-cash-flow-3" placeholder="Operating Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Investment Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="investment-cash-flow" id="investment-cash-flow-3" placeholder="Investment Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Financial Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="financial-cash-flow" id="financial-cash-flow-3" placeholder="Financial Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="btn-submit">
+                    <button class="" id="submit-3" onclick="submit3()">Submit</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row container-ratio">
+
+            <!-- <div id="more-year-4">
+                <button class="" id="btn-add-year-4" onclick="moreYear4()">
+                    +Add more year
+                </button>
+            </div> -->
+
+            <div class="ratio-year-4 close" id="year-4">
+                <div class="year-4">
+                    <h3>2016</h3>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Laba Bersih</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-bersih" id="laba-bersih-4" placeholder="laba bersih" required>
+                    </div>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Nominal Dividen</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="nominal-dividen" id="nominal-dividen-4" placeholder="nominal dividen" required>
+                    </div>
+                </div>
+                    
+                <div class="form">
+                    <div>
+                        <h5>Lembar Saham</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lembar-saham" id="lembar-saham-4" placeholder="lembar saham" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Kotor</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-kotor" id="laba-kotor-4" placeholder="Laba Kotor" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Operasi</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-operasi" id="laba-operasi-4" placeholder="Laba Operasi" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Pendapatan (Penjualan)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="pendapatan" id="pendapatan-4" placeholder="Pendapatan (Penjualan)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Ekuitas Entitas Induk</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="ekuitas" id="ekuitas-4" placeholder="ekuitas entitas induk" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Lialibilitas (Utang)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lialibilitas" id="lialibilitas-4" placeholder="Lialibilitas (Utang)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Operating Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="operating-cash-flow" id="operating-cash-flow-4" placeholder="Operating Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Investment Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="investment-cash-flow" id="investment-cash-flow-4" placeholder="Investment Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Financial Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="financial-cash-flow" id="financial-cash-flow-4" placeholder="Financial Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="btn-submit">
+                    <button class="" id="submit-4" onclick="submit4()">Submit</button>
+                </div>
+                
+            </div>
+
+            <!-- <div id="more-year-5">
+                <button class="" id="btn-add-year-5" onclick="moreYear5()">
+                    +Add more year
+                </button>
+            </div> -->
+
+            <div class="ratio-year-5 close" id="year-5">
+                <div class="year-5">
+                    <h3>2015</h3>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Laba Bersih</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-bersih" id="laba-bersih-5" placeholder="laba bersih" required>
+                    </div>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Nominal Dividen</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="nominal-dividen" id="nominal-dividen-5" placeholder="nominal dividen" required>
+                    </div>
+                </div>
+                    
+                <div class="form">
+                    <div>
+                        <h5>Lembar Saham</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lembar-saham" id="lembar-saham-5" placeholder="lembar saham" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Kotor</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-kotor" id="laba-kotor-5" placeholder="Laba Kotor" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Operasi</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-operasi" id="laba-operasi-5" placeholder="Laba Operasi" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Pendapatan (Penjualan)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="pendapatan" id="pendapatan-5" placeholder="Pendapatan (Penjualan)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Ekuitas Entitas Induk</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="ekuitas" id="ekuitas-5" placeholder="ekuitas entitas induk" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Lialibilitas (Utang)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lialibilitas" id="lialibilitas-5" placeholder="Lialibilitas (Utang)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Operating Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="operating-cash-flow" id="operating-cash-flow-5" placeholder="Operating Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Investment Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="investment-cash-flow" id="investment-cash-flow-5" placeholder="Investment Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Financial Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="financial-cash-flow" id="financial-cash-flow-5" placeholder="Financial Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="btn-submit">
+                    <button class="" id="submit-5" onclick="submit5()">Submit</button>
+                </div>
+                
+            </div>
+
+            <div id="more-year-6">
+                <button class="" id="btn-add-year-6" onclick="moreYear6()">
+                    +Add more year
+                </button>
+            </div>
+
+            <div class="ratio-year-6 close" id="year-6">
+                <div class="year-6">
+                    <h3>2014</h3>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Laba Bersih</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-bersih" id="laba-bersih-6" placeholder="laba bersih" required>
+                    </div>
+                </div>
+                <div class="form">
+                    <div>
+                        <h5>Nominal Dividen</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="nominal-dividen" id="nominal-dividen-6" placeholder="nominal dividen" required>
+                    </div>
+                </div>
+                    
+                <div class="form">
+                    <div>
+                        <h5>Lembar Saham</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lembar-saham" id="lembar-saham-6" placeholder="lembar saham" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Kotor</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-kotor" id="laba-kotor-6" placeholder="Laba Kotor" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Laba Operasi</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="laba-operasi" id="laba-operasi-6" placeholder="Laba Operasi" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Pendapatan (Penjualan)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="pendapatan" id="pendapatan-6" placeholder="Pendapatan (Penjualan)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Ekuitas Entitas Induk</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="ekuitas" id="ekuitas-6" placeholder="ekuitas entitas induk" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Lialibilitas (Utang)</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="lialibilitas" id="lialibilitas-6" placeholder="Lialibilitas (Utang)" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Operating Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="operating-cash-flow" id="operating-cash-flow-6" placeholder="Operating Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Investment Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="investment-cash-flow" id="investment-cash-flow-6" placeholder="Investment Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <h5>Financial Cash Flow</h5>
+                    </div>
+                    <div class="inputan">
+                        <input type="text" name="financial-cash-flow" id="financial-cash-flow-6" placeholder="Financial Cash Flow" required>
+                    </div>
+                </div>
+
+                <div class="btn-submit">
+                    <button class="" id="submit-6" onclick="submit6()">Submit</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="btn-analyze"> 
+                <a href="#section-result"><button id="analyze" onclick="submit()">ANALYZE</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-result close" id="section-result">
+        <div class="container-result">
+            <div class="row">
+                <h2 id="company-name"></h2>
+            </div>
+
+            <div class="container-data">
+                <div class="head-column">
+                    <div class="data-fill tahun">
+                        <h4>Year</h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>EPS <span>(Rp.)</span></h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>DPS <span>(Rp.)</span></h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>DPR <span>(%)</span></h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>GPM <span>(%)</span></h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>OPM <span>(%)</span></h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>NPM <span>(%)</span></h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>PBV <span></span></h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>ROE <span>(%)</span></h4>
+                    </div>
+                </div>
+
+                <div class="year-result close" id="year-result-6">
+                    <div class="data-fill tahun">
+                        <h4>2014</h4>
+                    </div>
+                    <div class="data" id="eps-6">
+                        
+                    </div>
+                    <div class="data" id="dps-6">
+                        
+                    </div>
+                    <div class="data" id="dpr-6">
+                        
+                    </div>
+                    <div class="data" id="gpm-6">
+                        <h4 id="gpm-6-value"></h4>
+                    </div>
+                    <div class="data" id="opm-6">
+                        <h4 id="opm-6-value"></h4>
+                    </div>
+                    <div class="data" id="npm-6">
+                        <h4 id="npm-6-value"></h4>
+                    </div>
+                    <div class="data" id="pbv-6">
+                        <h4 id="pbv-6-value"></h4>
+                    </div>
+                    <div class="data" id="roe-6">
+                        <h4 id="roe-6-value"></h4>
+                    </div>
+                </div>
+
+                <div class="year-result close" id="year-result-5">
+                    <div class="data-fill tahun">
+                        <h4>2015</h4>
+                    </div>
+                    <div class="data" id="eps-5">
+                        
+                    </div>
+                    <div class="data" id="dps-5">
+                        
+                    </div>
+                    <div class="data" id="dpr-5">
+                        
+                    </div>
+                    <div class="data" id="gpm-5">
+                        <h4 id="gpm-5-value"></h4>
+                    </div>
+                    <div class="data" id="opm-5">
+                        <h4 id="opm-5-value"></h4>
+                    </div>
+                    <div class="data" id="npm-5">
+                        <h4 id="npm-5-value"></h4>
+                    </div>
+                    <div class="data" id="pbv-5">
+                        <h4 id="pbv-5-value"></h4>
+                    </div>
+                    <div class="data" id="roe-5">
+                        <h4 id="roe-5-value"></h4>
+                    </div>
+                </div>
+
+                <div class="year-result close" id="year-result-4">
+                    <div class="data-fill tahun">
+                        <h4>2016</h4>
+                    </div>
+                    <div class="data" id="eps-4">
+                        
+                    </div>
+                    <div class="data" id="dps-4">
+                        
+                    </div>
+                    <div class="data" id="dpr-4">
+                        
+                    </div>
+                    <div class="data" id="gpm-4">
+                        <h4 id="gpm-4-value"></h4>
+                    </div>
+                    <div class="data" id="opm-4">
+                        <h4 id="opm-4-value"></h4>
+                    </div>
+                    <div class="data" id="npm-4">
+                        <h4 id="npm-4-value"></h4>
+                    </div>
+                    <div class="data" id="pbv-4">
+                        <h4 id="pbv-4-value"></h4>
+                    </div>
+                    <div class="data" id="roe-4">
+                        <h4 id="roe-4-value"></h4>
+                    </div>
+                </div>
+
+                <div class="year-result" id="year-result-3">
+                    <div class="data-fill tahun">
+                        <h4>2017</h4>
+                    </div>
+                    <div class="data" id="eps-3">
+                        
+                    </div>
+                    <div class="data" id="dps-3">
+                        
+                    </div>
+                    <div class="data" id="dpr-3">
+                        
+                    </div>
+                    <div class="data" id="gpm-3">
+                        <h4 id="gpm-3-value"></h4>
+                    </div>
+                    <div class="data" id="opm-3">
+                        <h4 id="opm-3-value"></h4>
+                    </div>
+                    <div class="data" id="npm-3">
+                        <h4 id="npm-3-value"></h4>
+                    </div>
+                    <div class="data" id="pbv-3">
+                        <h4 id="pbv-3-value"></h4>
+                    </div>
+                    <div class="data" id="roe-3">
+                        <h4 id="roe-3-value"></h4>
+                    </div>
+                </div>
+
+                <div class="year-result" id="year-result-2">
+                    <div class="data-fill tahun">
+                        <h4>2018</h4>
+                    </div>
+                    <div class="data" id="eps-2">
+                        
+                    </div>
+                    <div class="data" id="dps-2">
+                        
+                    </div>
+                    <div class="data" id="dpr-2">
+                        
+                    </div>
+                    <div class="data" id="gpm-2">
+                        <h4 id="gpm-2-value"></h4>
+                    </div>
+                    <div class="data" id="opm-2">
+                        <h4 id="opm-2-value"></h4>
+                    </div>
+                    <div class="data" id="npm-2">
+                        <h4 id="npm-2-value"></h4>
+                    </div>
+                    <div class="data" id="pbv-2">
+                        <h4 id="pbv-2-value"></h4>
+                    </div>
+                    <div class="data" id="roe-2">
+                        <h4 id="roe-2-value"></h4>
+                    </div>
+                </div>
+
+                <div class="year-result" id="year-result-1">
+                    <div class="data-fill tahun">
+                        <h4>2019</h4>
+                    </div>
+                    <div class="data" id="eps-1">
+                        
+                    </div>
+                    <div class="data" id="dps-1">
+                        
+                    </div>
+                    <div class="data" id="dpr-1">
+                        
+                    </div>
+                    <div class="data" id="gpm-1">
+                        <h4 id="gpm-1-value"></h4>
+                    </div>
+                    <div class="data" id="opm-1">
+                        <h4 id="opm-1-value"></h4>
+                    </div>
+                    <div class="data" id="npm-1">
+                        <h4 id="npm-1-value"></h4>
+                    </div>
+                    <div class="data" id="pbv-1">
+                        <h4 id="pbv-1-value"></h4>
+                    </div>
+                    <div class="data" id="roe-1">
+                        <h4 id="roe-1-value"></h4>
+                    </div>
+                </div>
+               
+            </div>
+    
+            <div class="container-summary adjust">
+                <div class="summary-left">
+                    <div class="summary text">
+                        <h3>Summary :</h3>
+                    </div>
+                    <div class="summary">
+                        <div class="label">
+                            <h4>EPS Growth</h4>
+                        </div>
+                        <div class="eps-growth" id="eps-growth">
+                            
+                        </div>
+                    </div>
+                    <div class="summary">
+                        <div class="label">
+                            <h4>PER</h4>
+                        </div>
+                        <div class="PER" id="per-value">
+                            
+                        </div>
+                    </div>
+                    <div class="summary">
+                        <div class="label">
+                            <h4>DPR Rate</h4>
+                        </div>
+                        <div class="dpr-rate" id="dpr-rate">
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="summary-right">
+                    <h2>Harga penutupan terakhir:</h2>
+                    <h1 id="harga-saham"></h1>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+        <div class="container-proyeksi">
+            <div>
+                <h2>Proyeksi</h2>
+            </div>
+
+            <div class="container-data adjust">
+                <div class="head-column">
+                    <div class="data-fill tahun">
+                        <h4>Year</h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>2020</h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>2021</h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>2022</h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>2023</h4>
+                    </div>
+                    <div class="data-fill">
+                        <h4>2024</h4>
+                    </div>
+                </div>
+                <div class="proyeksi">
+                    <div class="data-fill tahun">
+                       <h4>EPS</h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-eps-1"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-eps-2"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-eps-3"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-eps-4"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-eps-5"></h4>
+                    </div>
+                </div>
+                <div class="proyeksi">
+                    <div class="data-fill tahun">
+                        <h4>PER</h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-per-1"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-per-2"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-per-3"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-per-4"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-per-5"></h4>
+                    </div>
+                </div>
+                <div class="proyeksi">
+                    <div class="data-fill tahun">
+                        <h4>Price</h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-price-1"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-price-2"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-price-3"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-price-4"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-price-5"></h4>
+                    </div>
+                </div>
+                <div class="proyeksi">
+                    <div class="data-fill tahun">
+                        <h4>Return</h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-return-1"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-return-2"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-return-3"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-return-4"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-return-5"></h4>
+                    </div>
+                </div>
+                <div class="proyeksi">
+                    <div class="data-fill tahun">
+                        <h4>Dividend</h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-dividen-1"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-dividen-2"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-dividen-3"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-dividen-4"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-dividen-5"></h4>
+                    </div>
+                </div>
+                <div class="proyeksi">
+                    <div class="data-fill tahun">
+                        <h4>Div. Yield</h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-yield-1"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-yield-2"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-yield-3"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-yield-4"></h4>
+                    </div>
+                    <div class="data">
+                        <h4 id="proyeksi-yield-5"></h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="break-section close" id="break-section">
+        <div class="container-break row">
+            <blockquote>
+                Price is what you pay.<span>&nbsp;Value is what you get.</span> 
+            </blockquote>
+            <cite>- Warren Buffet</cite>
+        </div>
+    </section>
+
+    <script src="./resources/js/script.js"></script>
+</body>
+</html>
